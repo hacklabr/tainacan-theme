@@ -17,6 +17,7 @@ echo "Compiling Sass..."
 #cd ../../../../assets/scss
 cd src/assets/scss
 sass -E 'UTF-8' style.scss:../../style.css
+echo "compilando sass do bootstrap"
 sass --style compressed -E "UTF-8" bootstrap_custom.scss:../vendor/bootstrap/scss/bootstrap.min.css
 rm -rf ../../style.css.map
 
